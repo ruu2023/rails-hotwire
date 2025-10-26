@@ -1,0 +1,12 @@
+<% content_for :title, "猫を編集する" %>
+
+<h1>猫を編集する</h1>
+
+<%= render "form", cat: @cat %>
+
+<br>
+
+<div>
+  <%= link_to "詳細", @cat %> |
+  <%= link_to "戻る", cats_path %>
+</div>
