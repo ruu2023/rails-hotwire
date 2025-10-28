@@ -84,6 +84,9 @@ GEM
       msgpack (~> 1.2)
     bootstrap (5.3.5)
       popper_js (>= 2.11.8, < 3)
+    bootstrap_form (5.4.0)
+      actionpack (>= 6.1)
+      activemodel (>= 6.1)
     brakeman (7.1.0)
       racc
     builder (3.3.0)
@@ -403,6 +406,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   bootstrap (~> 5.3.3)
+  bootstrap_form
   brakeman
   bundler-audit
   cssbundling-rails
