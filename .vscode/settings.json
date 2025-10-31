@@ -1,0 +1,6 @@
+{
+  "editor.formatOnSave": true,
+  "[erb]": {
+    "editor.defaultFormatter": "aliariff.vscode-erb-beautify"
+  }
+}
