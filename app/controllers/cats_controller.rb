@@ -42,7 +42,8 @@ class CatsController < ApplicationController
   # PATCH/PUT /cats/1
   def update
     if @cat.update(cat_params)
-      redirect_to @cat, notice: "猫を更新しました。", status: :see_other
+      # redirect_to @cat, notice: "猫を更新しました。", status: :see_other
+      flash.now.notice = "猫を更新しました。"
     else
       render :edit, status: :unprocessable_content
     end
