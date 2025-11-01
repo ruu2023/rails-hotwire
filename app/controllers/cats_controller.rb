@@ -33,7 +33,8 @@ class CatsController < ApplicationController
     @cat = Cat.new(cat_params)
 
     if @cat.save
-      redirect_to @cat, notice: "猫を登録しました。"
+      # redirect_to @cat, notice: "猫を登録しました。"
+      flash.now.notice = "猫を登録しました。"
     else
       render :new, status: :unprocessable_content
     end
